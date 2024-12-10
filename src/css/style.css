@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.8rem;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: grid;
+    grid:
+    "create stars stars best"
+    "create social calendar best"
+    "chat social calendar best"
+    "chat audience followers followers";
+    grid-template-columns: repeat(4, 30rem);
+    grid-template-rows: 33rem 6rem 16rem 23rem;
+    grid-gap: 3rem;
+}
+
+.main .create-post {
+    grid-area: create;
+    background-color: var(--light-yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.main .create-post h2 {
+    font-size: 3.5rem;
+    text-align: left;
+    padding: 2rem 4rem;
+    line-height: 3.5rem;
+    font-weight: 500;
+}
+
+.main .create-post h2 span {
+    color: var(--dark-purple);
+    font-style: italic;
+}
+
+.main .create-post img {
+    width: 20rem;
+}
+
+.main .stars {
+    grid-area: stars;
+    background-color: var(--dark-purple);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .stars h2 {
+    font-size: 6rem;
+    text-align: center;
+    line-height: 5.5rem;
+    padding: 0 2rem 2rem;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.main .stars h2 .ten {
+    color: var(--dark-yellow);
+}
+
+.main .stars h2 .faster {
+    font-style: italic;
+}
+
+.main .stars p {
+    color: var(--white);
+    padding-top: 1rem;
+    font-size: 1.8rem;
+}
+
+.main .stars img {
+    width: 17rem;
+}
+
+.main .best-time {
+    grid-area: best;
+    background-color: var(--light-purple);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.main .best-time h2 {
+    font-size: 3rem;
+    padding: 3rem 4rem;
+    font-weight: 500;
+}
+
+.main .best-time p {
+    width: 18rem;
+    margin: 0 0 2rem 4rem;
+    font-weight: 400;
+}
+
+.main .best-time img {
+    width: 25rem;
+    height: 34rem;
+    position: absolute;
+    top: 12rem;
+    left: 5rem;
+    object-position: 2rem;
+    object-fit: cover;
+}
+
+.main .social {
+    grid-area: social;
+    background-color: var(--white);
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.main .social h2 {
+    width: 20rem;
+    line-height: 3rem;
+    margin: 0 0 2rem 3rem;
+    font-weight: 500;
+}
+
+.main .social img {
+    width: 27rem;
+    height: 7rem;
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    object-fit: cover;
+    object-position: 2rem;
+}
+
+.main .calendar {
+    grid-area: calendar;
+    background-color: var(--dark-yellow);
+    border-radius: 1rem;
+    display: flex;
+    position: relative;
+}
+
+.main .calendar h2 {
+    font-size: 3rem;
+    width: 20rem;
+    line-height: 3rem;
+    padding-top: 2rem;
+    margin-left: 3rem;
+    font-weight: 500;
+}
+
+.main .calendar img {
+    width: 24rem;
+    height: 12rem;
+    position: absolute;
+    top: 13rem;
+    left: 3rem;
+    object-fit: cover;
+    object-position: 0 2rem;
+}
+
+.main .chat {
+    grid-area: chat;
+    background-color: var(--dark-yellow);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main .chat h2 {
+    font-size: 3.5rem;
+    width: 20rem;
+    line-height: 3.5rem;
+    margin: 3rem 4rem;
+    font-weight: 500;
+}
+
+.main .chat img {
+    width: 23rem;
+    margin: 0 0 3rem 4rem;
+}
+
+.main .audience {
+    grid-area: audience;
+    background-color: var(--white);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .audience h2 {
+    font-size: 6rem;
+    font-weight: 500;
+    margin: 1rem 0 0 3rem;
+}
+
+.main .audience p {
+    margin-left: 3rem;
+}
+
+.main .audience img {
+    width: 18rem;
+    margin: 3rem;
+}
+
+.main .followers {
+    grid-area: followers;
+    background-color: var(--dark-purple);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .followers h2 {
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+    color: var(--white);
+    line-height: 3.5rem;
+    font-weight: 500;
+    margin-right: 3rem;
+}
+
+.main .followers img {
+    width: 23rem;
+    height: 20rem;
+    object-fit: cover;
+    margin: 2rem 0 0 3rem;
+}
