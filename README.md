@@ -22,7 +22,7 @@ Esse projeto é um exercício do Frontend Mentor com foco no grid do css, foi cr
 
 ### Links
 
-- Live Site URL: [Clique aqui](https://your-live-site-url.com)
+- Live Site URL: [Clique aqui](https://gbloureiros.github.io/projeto-bento-grid/)
 
 ## Meu processo
 
